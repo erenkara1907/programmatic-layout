@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE31F91B292B70B80044016F /* RickyMortyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31F91A292B70B80044016F /* RickyMortyService.swift */; };
+		CE31F91D292B70C90044016F /* RickyMortyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31F91C292B70C90044016F /* RickyMortyModel.swift */; };
+		CE31F920292B75020044016F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CE31F91F292B75020044016F /* Alamofire */; };
+		CE31F923292B75660044016F /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = CE31F922292B75660044016F /* AlamofireImage */; };
+		CE31F925292B796F0044016F /* RickyMortyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31F924292B796F0044016F /* RickyMortyViewModel.swift */; };
+		CE31F928292B89840044016F /* RickyMortyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE31F927292B89840044016F /* RickyMortyTableViewCell.swift */; };
 		CEA04F24292B66FC0056BF3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04F23292B66FC0056BF3D /* AppDelegate.swift */; };
 		CEA04F26292B66FC0056BF3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04F25292B66FC0056BF3D /* SceneDelegate.swift */; };
 		CEA04F28292B66FC0056BF3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04F27292B66FC0056BF3D /* ViewController.swift */; };
 		CEA04F2B292B66FC0056BF3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA04F29292B66FC0056BF3D /* Main.storyboard */; };
 		CEA04F2D292B66FD0056BF3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA04F2C292B66FD0056BF3D /* Assets.xcassets */; };
 		CEA04F30292B66FD0056BF3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA04F2E292B66FD0056BF3D /* LaunchScreen.storyboard */; };
+		CEA04F3F292B67D00056BF3D /* RickyMortyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA04F3E292B67D00056BF3D /* RickyMortyViewController.swift */; };
+		CEA04F42292B69CE0056BF3D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CEA04F41292B69CE0056BF3D /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE31F91A292B70B80044016F /* RickyMortyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickyMortyService.swift; sourceTree = "<group>"; };
+		CE31F91C292B70C90044016F /* RickyMortyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickyMortyModel.swift; sourceTree = "<group>"; };
+		CE31F924292B796F0044016F /* RickyMortyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickyMortyViewModel.swift; sourceTree = "<group>"; };
+		CE31F927292B89840044016F /* RickyMortyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickyMortyTableViewCell.swift; sourceTree = "<group>"; };
 		CEA04F20292B66FC0056BF3D /* ProgrammaticLayoutProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgrammaticLayoutProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA04F23292B66FC0056BF3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA04F25292B66FC0056BF3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +36,7 @@
 		CEA04F2C292B66FD0056BF3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA04F2F292B66FD0056BF3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEA04F31292B66FD0056BF3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA04F3E292B67D00056BF3D /* RickyMortyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickyMortyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +44,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA04F42292B69CE0056BF3D /* SnapKit in Frameworks */,
+				CE31F920292B75020044016F /* Alamofire in Frameworks */,
+				CE31F923292B75660044016F /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE31F926292B89670044016F /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE31F927292B89840044016F /* RickyMortyTableViewCell.swift */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
 		CEA04F17292B66FB0056BF3D = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +80,76 @@
 		CEA04F22292B66FC0056BF3D /* ProgrammaticLayoutProject */ = {
 			isa = PBXGroup;
 			children = (
-				CEA04F23292B66FC0056BF3D /* AppDelegate.swift */,
-				CEA04F25292B66FC0056BF3D /* SceneDelegate.swift */,
-				CEA04F27292B66FC0056BF3D /* ViewController.swift */,
-				CEA04F29292B66FC0056BF3D /* Main.storyboard */,
+				CEA04F38292B67510056BF3D /* Feature */,
+				CEA04F37292B67210056BF3D /* Core */,
 				CEA04F2C292B66FD0056BF3D /* Assets.xcassets */,
 				CEA04F2E292B66FD0056BF3D /* LaunchScreen.storyboard */,
 				CEA04F31292B66FD0056BF3D /* Info.plist */,
 			);
 			path = ProgrammaticLayoutProject;
+			sourceTree = "<group>";
+		};
+		CEA04F37292B67210056BF3D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CEA04F29292B66FC0056BF3D /* Main.storyboard */,
+				CEA04F23292B66FC0056BF3D /* AppDelegate.swift */,
+				CEA04F25292B66FC0056BF3D /* SceneDelegate.swift */,
+				CEA04F27292B66FC0056BF3D /* ViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CEA04F38292B67510056BF3D /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				CEA04F39292B677E0056BF3D /* RickyMorty */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		CEA04F39292B677E0056BF3D /* RickyMorty */ = {
+			isa = PBXGroup;
+			children = (
+				CEA04F3D292B67920056BF3D /* Service */,
+				CEA04F3C292B678F0056BF3D /* Model */,
+				CEA04F3B292B678A0056BF3D /* ViewModel */,
+				CEA04F3A292B67860056BF3D /* View */,
+			);
+			path = RickyMorty;
+			sourceTree = "<group>";
+		};
+		CEA04F3A292B67860056BF3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE31F926292B89670044016F /* TableViewCell */,
+				CEA04F3E292B67D00056BF3D /* RickyMortyViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEA04F3B292B678A0056BF3D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE31F924292B796F0044016F /* RickyMortyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEA04F3C292B678F0056BF3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE31F91C292B70C90044016F /* RickyMortyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEA04F3D292B67920056BF3D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CE31F91A292B70B80044016F /* RickyMortyService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +168,11 @@
 			dependencies = (
 			);
 			name = ProgrammaticLayoutProject;
+			packageProductDependencies = (
+				CEA04F41292B69CE0056BF3D /* SnapKit */,
+				CE31F91F292B75020044016F /* Alamofire */,
+				CE31F922292B75660044016F /* AlamofireImage */,
+			);
 			productName = ProgrammaticLayoutProject;
 			productReference = CEA04F20292B66FC0056BF3D /* ProgrammaticLayoutProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +201,11 @@
 				Base,
 			);
 			mainGroup = CEA04F17292B66FB0056BF3D;
+			packageReferences = (
+				CEA04F40292B69CE0056BF3D /* XCRemoteSwiftPackageReference "SnapKit" */,
+				CE31F91E292B75020044016F /* XCRemoteSwiftPackageReference "Alamofire" */,
+				CE31F921292B75660044016F /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = CEA04F21292B66FC0056BF3D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +233,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE31F928292B89840044016F /* RickyMortyTableViewCell.swift in Sources */,
+				CE31F925292B796F0044016F /* RickyMortyViewModel.swift in Sources */,
+				CE31F91D292B70C90044016F /* RickyMortyModel.swift in Sources */,
 				CEA04F28292B66FC0056BF3D /* ViewController.swift in Sources */,
+				CEA04F3F292B67D00056BF3D /* RickyMortyViewController.swift in Sources */,
 				CEA04F24292B66FC0056BF3D /* AppDelegate.swift in Sources */,
 				CEA04F26292B66FC0056BF3D /* SceneDelegate.swift in Sources */,
+				CE31F91B292B70B80044016F /* RickyMortyService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +458,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE31F91E292B75020044016F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		CE31F921292B75660044016F /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		CEA04F40292B69CE0056BF3D /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE31F91F292B75020044016F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE31F91E292B75020044016F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		CE31F922292B75660044016F /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE31F921292B75660044016F /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+		CEA04F41292B69CE0056BF3D /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEA04F40292B69CE0056BF3D /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEA04F18292B66FB0056BF3D /* Project object */;
 }
